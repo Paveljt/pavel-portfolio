@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 140px 10% 80px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.hero-content h3 {
+  font-size: 24px;
+  color: #bfdbfe;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 70px 10%;
+}
+
+section h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+#about p,
+.timeline-item p,
+.project-card p {
+  font-size: 17px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-weight: 600;
+}
+
+.project-card,
+.timeline-item {
+  background: white;
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.project-card h3,
+.timeline-item h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.tech {
+  margin-top: 12px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.leadership-list {
+  background: white;
+  padding: 30px 45px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.leadership-list li {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0f172a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content h3 {
+    font-size: 20px;
+  }
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  font-weight: 600;
+  color: #374151;
+}
+
+.cert-card span {
+  color: #2563eb;
+  font-size: 14px;
+}
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: white;
+  margin-left: 10px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  margin-bottom: 25px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.animated-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.github-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.github-card img {
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+/* Dark mode */
+#darkModeToggle {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark section h2 {
+  color: #93c5fd;
+}
+
+body.dark .project-card,
+body.dark .timeline-item,
+body.dark .skills-grid span,
+body.dark .leadership-list,
+body.dark .cert-card {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark footer {
+  background: #020617;
+}
